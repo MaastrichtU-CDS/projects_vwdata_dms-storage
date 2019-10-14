@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title>Maastricht Studie data upload</title>
+    </head>
+
+    <body>
+        <p style="color: #FF0000;">{% if status != None %}{{status}}{% endif %}</p>
+        <div>
+            <h2>Encrypted identifiers</h2>
+            <form method="POST" enctype="multipart/form-data">
+                <input type="hidden" name="fileType" id="fileType" value="encryptedIdentifiers"/>
+                <input type="file" name="fileObject" id="fileObject"/><br/><br/>
+                <input type="submit" value="Upload"/>
+            </form>
+        </div>
+
+        <div>
+            <h2>Dataset</h2>
+            <form method="POST" enctype="multipart/form-data">
+                <input type="hidden" name="fileType" id="fileType" value="dataset"/>
+                <input type="file" name="fileObject" id="fileObject"/><br/><br/>
+                <input type="submit" value="Upload"/>
+            </form>
+        </div>
+    </body>
+</html>

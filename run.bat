@@ -1,0 +1,1 @@
+docker run --rm -it -v %cd%\app:/app -p 5000:5000 python:3-stretch /bin/bash
