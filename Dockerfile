@@ -7,4 +7,4 @@ RUN cd /app && \
 
 WORKDIR /app
 
-RUN ["python", "run.py"]
+CMD ["python", "run.py"]
